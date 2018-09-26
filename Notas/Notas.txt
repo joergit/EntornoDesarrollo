@@ -1,0 +1,52 @@
+Preparándose en Gulp:
+1.- Instalación: si tenemos instalado en windows NodeJS automáticamente tenemos instalado 'npm'. Como una buena practica lo correcto es verificar las versiones instaladas de NodeJS y NPM, ejecutamos en linea de comando:
+
+  node -v
+  npm -v
+
+Una vez comprobado que tenemos instalado NodeJS y NPM pasamos a los comandos de instalación de 'gulp'.
+
+EMPEZANDO
+Estoy Estudiando un tutorial de gulp y acción previa a los pasos que se deben seguir hacemos otras opciones.
+
+a.- Creamos un archivo package.json recuerda que tienes que estar en el directorio de tu proyecto:
+    npm init -y
+    npm init --yes
+
+b.- Instalamos dependencias:
+    npm install bootstrap font-awesome jquery popper.js
+
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||
+
+
+c.- Instalar dependencias adicionales no incluidas para el proyecto.
+
+    npm install -D gulp gulp-cli gulp-sass browser-sync
+
+C.1.- Configuración de gulp
+        1.- Creación de archivo de configuración, el cual se crea dentro del directorio principal:
+            gulpfile.js
+        
+        2.- creamos una carpeta SRC y allí escribiremos todo el proyecto.
+
+        3.- Pasamos a configurar el archivo 'gulpfile.js'.
+
+
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||
+
+1.- Instalar gulp globalmente:
+    npm install --global gulp-cli
+
+2.- Instalar gulp en un proyecto (Nota: Tenemos que ubicarnos en el directorio del proyecto. El nombre del directorio tienen que ser distinto a 'gulp')devDependencies: 
+    npm install --save-dev gulp
+
+3.- Cree un gulpfile.js en la raíz de su proyecto:
+
+    var gulp =  require ( ' gulp ' );
+    tragar . task ( ' default ' , function () {
+      // coloca el código para tu tarea predeterminada aquí 
+    });
+
+4.- Ejecutar gulp.
